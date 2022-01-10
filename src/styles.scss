@@ -1,0 +1,60 @@
+@import './my-theme.scss';
+
+
+.label-costumization{
+    color: $labelColor;
+    margin-bottom: 0.3em;
+}
+
+
+.input-costumization{
+    background-color: $inputColor;
+    border-radius: 0;
+    border-color:$inputColor;
+    outline: none ;
+
+    box-sizing: border-box;
+    border: 1px solid $inputColor;
+    height: 3em;
+
+    
+}
+
+input[type=checkox]:checked{
+    background-color: $greenColor;
+
+}
+.form-check-input{
+    border-color: $greenColor ;
+    outline: none;
+    width: 2em;
+    height: 2em;
+    box-sizing: border-box;
+    border-radius: 0;
+    &:checked{
+        border-radius: 0;
+        background-color: $greenColor;
+        outline: none;
+    }
+    &:focus{
+        outline: 0;
+        border-radius: 0;
+    }
+}
+.form-check{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 0;
+    
+    .form-check-label{
+        height: 2em;
+        color: $labelColor;
+        margin-left: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

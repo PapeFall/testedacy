@@ -1,0 +1,44 @@
+@import '../../../my-theme.scss';
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5em;
+    background-color: #f8f8ea;
+    img{
+        height: 1.3em;
+    }
+
+}
+h1{
+    margin-bottom: 1em;
+}
+.form-group{
+    margin-bottom: 1.3em;
+}
+.page-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3.5em;
+    
+}
+
+.btn-green{
+    border-radius: 0.5em;
+    border: none;
+    background-color: $greenColor;
+    margin:3em;
+    padding: 0.7em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.login{
+    a{
+        text-decoration: none;
+        color: $greenColor;
+    }
+}
