@@ -8,12 +8,56 @@
     background-color: $componentBackgroun;
     border-right: 0;
 }
+.btn-costumize{
+    border: 0;
+    border-radius: 0.5em;
+    background-color: white;
+    color: $greenColor;
+    font-size: 0.7em;
+    padding: 0.5em;
+    padding-right: 0.7em;
+    .circle-add{
+      
+        width: inherit;
+        height: inherit;
+        border-radius: 50%;
+        
+        color: $greenColor;
+        background-color: rgb(206, 248, 238);
+        text-align: center;
+    }
+}
 .icon-user{
     .mat-icon{
-        height:48px !important;
-        width:48px !important;
-        font-size:48px !important;
+        height:1em!important;
+        width:1em !important;
+        font-size:4em !important;
     }
+}
+.btn-programs{
+    border: 0;
+    background-color: transparent;
+    font-size: 0.7em;
+    margin-right: 2em;
+    margin-left: 2em;
+
+}
+.icon-lang{
+    margin-right: 0;
+    .mat-icon{
+        font-size: 0.7em;
+       
+    }
+}
+ select {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    background: transparent;
+    border: 0;
+    font-size: 0.7em;
+    padding-right: 1em;
+    outline: 0;
 }
 .example-spacer {
     flex: 1 1 auto;
@@ -58,4 +102,16 @@ mat-icon{
         
 
     }
+}
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 16px;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }

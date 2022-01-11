@@ -1,55 +1,71 @@
 <mat-toolbar class="bg">
-    <mat-toolbar-row>
-      <span></span>
-      <span class="example-spacer"></span>
-      <button mat-icon-button ><mat-icon>notifications</mat-icon></button>
+  <mat-toolbar-row>
+    <span></span>
+    <button mat-button class="btn-costumize"><mat-icon class="circle-add">add_circle_outline</mat-icon> Customize</button>
+    <span class="example-spacer"></span>
+    <div class="center-row">
+      <mat-icon class="icon-lang">language</mat-icon>
+      <select>
+        <option checked>EN</option>
+        <option>AR</option>
+        <option>FR</option>
+      </select>
+    </div>
+    <button class="btn-programs ">MANAGE PROGRAMS</button>
+
+    <div class="btn-programs">
+      <button  mat-icon-button>
+        <mat-icon>notifications</mat-icon>
+      </button>
+    </div>
+
+    <div class="center-column center-row mt-3">
+      <button mat-icon-button class="icon-user center-column center-row" [matMenuTriggerFor]="menu">
+        <mat-icon>account_circle</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>edit</mat-icon>
+          Modifier le mot de passe
+        </button>
+        <button mat-menu-item>
+          <mat-icon>logout</mat-icon>
+          Se déconnecter
+        </button>
+      </mat-menu>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-drawer-container class="drawer-container">
+  <mat-drawer class="sidenav" mode="side" opened style="width: fit-content;height: 100%;">
+
+    <mat-list role="list">
 
 
-      <div class="center-column">
-        <button mat-icon-button class="icon-user" [matMenuTriggerFor]="menu"><mat-icon>account_circle</mat-icon></button>
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item >
-      <mat-icon>edit</mat-icon>
-      Modifier le mot de passe
-    </button>
-    <button  mat-menu-item>
-      <mat-icon>logout</mat-icon>
-      Se déconnecter
-    </button>
-  </mat-menu>
-      </div>
-    </mat-toolbar-row>
-  </mat-toolbar>
-  <mat-drawer-container class="drawer-container">
-    <mat-drawer class="sidenav" mode="side" opened style="width: fit-content;height: 100%;">
-  
-      <mat-list role="list">
-       
-  
-        <mat-list-item routerLink="./"  routerLinkActive="isRouteActive" role="listitem">
-          <mat-icon>home</mat-icon>
-          <a>Overview</a>
-        </mat-list-item>
-  
-       
-  
-        <mat-list-item routerLink="./historique"  routerLinkActive="isRouteActive" role="listitem">
-          <mat-icon>poll_outlined</mat-icon>
-          <a>Analytics</a>
-        </mat-list-item>
-  
-        <mat-list-item routerLink="./reclamation"  routerLinkActive="isRouteActive" role="listitem">
-          <mat-icon>first_page</mat-icon>
-          <a>Collapse</a>
-        </mat-list-item>
-        
-  
-  
-      </mat-list>
-  
-  
-    </mat-drawer>
-    <mat-drawer-content  class="pt-4">
-      <router-outlet></router-outlet>
-    </mat-drawer-content>
-  </mat-drawer-container>
+      <mat-list-item routerLink="./" routerLinkActive="isRouteActive" role="listitem">
+        <mat-icon>home</mat-icon>
+        <a>Overview</a>
+      </mat-list-item>
+
+
+
+      <mat-list-item routerLink="./historique" routerLinkActive="isRouteActive" role="listitem">
+        <mat-icon>poll_outlined</mat-icon>
+        <a>Analytics</a>
+      </mat-list-item>
+
+      <mat-list-item routerLink="./reclamation" routerLinkActive="isRouteActive" role="listitem">
+        <mat-icon>first_page</mat-icon>
+        <a>Collapse</a>
+      </mat-list-item>
+
+
+
+    </mat-list>
+
+
+  </mat-drawer>
+  <mat-drawer-content class="pt-4">
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>

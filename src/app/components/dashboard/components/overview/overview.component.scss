@@ -1,0 +1,29 @@
+@import '../../../../../my-theme.scss';
+
+.margin{
+    margin:10em;
+    margin-top:3em;
+
+    p{
+        color: $labelColor;
+        font-family: Roboto;
+    }
+}
+
+.alert-warning{
+    background-color: #fffaea;
+    border: 0;
+    font-size: 1.1em;
+}
+
+.btn-send{
+    background-color: transparent;
+    border: 1px solid $labelColor;
+    border-radius: 0.3em;
+    color: $labelColor;
+    padding: 0.7em;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-top: 1em;
+
+}
