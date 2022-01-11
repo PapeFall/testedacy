@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     padding: 2.5em;
-    background-color: #f8f8ea;
+    background-color: #FFF9E5;
     img{
         height: 1.3em;
     }
@@ -61,18 +61,32 @@
     margin-bottom: 2em;
 }
 
+.form-control{
+    height: 0;
+}
 .input-costumization2{
     border-radius: 0;
     outline: none ;
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="fit-content" height="100%"><rect fill="lightgray" width="100%" height="100%" x="70%" /><text x="75%" y="59%" style="font: bold 16px;text-align:center">.edacy.com</text></svg>') no-repeat;
+    // background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="fit-content" height="100%"><rect fill="lightgray" width="100%" height="100%" x="70%" /><text x="75%" y="59%" style="font: bold 16px;text-align:center">.edacy.com</text></svg>') no-repeat;
     overflow-x: 75%;
     box-sizing: border-box;
     border: 1px solid lightgray;
-    height: 3em;
-    border-radius: 0.3em;
+    height: 3em !important;
+    border-top-left-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
+    border-right: 0;
+
 }
 
-
+.domain{
+    background-color: $inputColor;
+    border: 1px solid lightgray;
+    border-left: 0;
+    border-top-right-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
 
 .lang-card{
     border: 1px solid $greenColor;

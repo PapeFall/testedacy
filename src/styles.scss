@@ -58,3 +58,18 @@ input[type=checkox]:checked{
         align-items: center;
     }
 }
+
+
+.center-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

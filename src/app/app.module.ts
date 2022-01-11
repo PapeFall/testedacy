@@ -25,13 +25,17 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SignupComponent } from './components/signup/signup.component';
 import { CreateEnvironmentComponent } from './components/create-environment/create-environment.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { OverviewComponent } from './components/dashboard/components/overview/overview.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SignupComponent,
-    CreateEnvironmentComponent   
+    CreateEnvironmentComponent,
+    DashboardComponent,
+    OverviewComponent   
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,61 @@
+@import '../../../my-theme.scss';
+
+.drawer-container{
+    height: 100%;
+    width: 100%;
+}
+.sidenav,.bg{
+    background-color: $componentBackgroun;
+    border-right: 0;
+}
+.icon-user{
+    .mat-icon{
+        height:48px !important;
+        width:48px !important;
+        font-size:48px !important;
+    }
+}
+.example-spacer {
+    flex: 1 1 auto;
+  }
+mat-icon{
+    margin-right: 0.5em;
+}
+
+.mat-list-item-content{
+    color: white;
+}
+// mat-list-item:hover{
+//     background-color:  white;
+//     color:white;
+//     cursor: pointer;
+// }
+
+
+
+.isRouteActive{
+    background-color:  $listItemColor;
+    color:white;
+    cursor: pointer;
+    
+}
+
+.mat-list-base{
+    padding-top: 0;
+    .mat-list-item{
+        padding-left: 1em;
+        padding-right: 1em;
+        color: $labelColor;
+
+    }
+}
+
+:host ::ng-deep .mat-list-base .mat-list-item {
+    color: white;
+    height: 4em;
+    &.isRouteActive{
+        color: white;
+        
+
+    }
+}
